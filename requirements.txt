@@ -1,0 +1,13 @@
+configur
+pandas
+robin_stocks
+yfinance
+datetime
+time
+numpy
+openpyxl
+math
+heapq
+random
+os
+matplotlib
