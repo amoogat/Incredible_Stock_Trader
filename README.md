@@ -1,14 +1,14 @@
 # Incredible_Stock_Trader
-This repository includes code that not only creates an optimal algorithm for trading a stock, but also finds the most optimal stocks to trade with such an algorithm.
+This repository includes code that not only creates an optimal algorithm for trading a stock, but also finds the most optimal stocks to trade with such an algorithm. Please note that I am not a financial advisor and that trading in the stock market always comes with risk, no matter what incredible algorithms are being used. I always suggest doing your own research and coming up with a strategy that does not rely on blind faith in algorithms, especially ones that you don't understand! Hopefully this README helps you understand my strategy.
 
 ## Workflow
-- The workflow diagram depicts how this code works. It currently shows some of the future ideas listed below in the Future Works section, which will be implemented soon.
+- The workflow diagram depicts how the code works. It currently shows some of the future ideas listed below in the Future Works section, which will be implemented soon (9/27/21).
 ![Workflow Diagram](workflow.drawio.svg)
 
 ## Stock Finder
 - The StockFinder.ipynb script exemplifies the original idea behind the Incredible Stock Trader. It is comprised of an non-optimized version of the algorithm, which is as follows:
   - Checks for bullish MACD (5, 35, 5) Divergence along with a bullish RVI Divergence (10 day span). These two Technical Analysis Indicators (MACD and RVI) are used to determine the signal direction, meaning whether the stock will move up or down.
-  - The other key part of the simple StockFinder.ipynb script is the use of two more technical indcators: ATR and ADX. These two indcators are used to determine signal strength. We only buy or sell on strong or meaningful signals. The widespread commonly used settings for ATR and ADX are implemented here: ATR Ratio >= 1 and ADX Signal >= 25.
+  - The other key part of the simple StockFinder.ipynb script is the use of two more technical indcators: ATR and ADX. These two indcators are used to determine signal strength. We only buy or sell on strong or meaningful signals. The widespread and commonly used settings for ATR and ADX are implemented here: ATR Ratio >= 1 and ADX Signal >= 25.
 - These signals on their default settings were enough to generate a list of roughly 500 stocks in which this kind of a trading strategy produces a higher level of profit than the underlying asset, as well as an overall Profitable Trade Ratio (more winning trades than losing ones).
  
 ## Parameter Optimizer
