@@ -1,6 +1,10 @@
 # Incredible_Stock_Trader
 This repository includes code that not only creates an optimal algorithm for trading a stock, but also finds the most optimal stocks to trade with such an algorithm.
 
+## Workflow
+- The workflow diagram depicts how this code works. It currently shows some of the future ideas listed below in the Future Works section, which will be implemented soon.
+![Workflow Diagram](workflow.drawio.svg)
+
 ## Stock Finder
 - The StockFinder.ipynb script exemplifies the original idea behind the Incredible Stock Trader. It is comprised of an non-optimized version of the algorithm, which is as follows:
   - Checks for bullish MACD (5, 35, 5) Divergence along with a bullish RVI Divergence (10 day span). These two Technical Analysis Indicators (MACD and RVI) are used to determine the signal direction, meaning whether the stock will move up or down.
@@ -14,10 +18,6 @@ This repository includes code that not only creates an optimal algorithm for tra
 
 ## Live Trader
 - Using RobinStocks API, this code can actually be used to freely trade according to the buy and sell signals of the optimized algorithm. Because I do not have $25,000 in my Robinhood trading account (and the SEC requires this amount for daytrading), I must wait 24 hours to sell an asset after buying it. For this reason, I have implemented an email notification for those who don't want to risk being marked as a daytrader or who are tentative about letting a robot control their investment portfolio. Rest assured, I have backtested and livetested the LiveTrader.ipynb script and there is no difference between letting the script do the trading versus waiting for the daily emails at the end of the trading day.
-
-## Workflow
-- The workflow diagram depicts how this code works. It currently shows some of the future ideas listed below in the Future Works section, which will be implemented soon.
-![Workflow Diagram](workflow.drawio.svg)
 
 ## Future Works
 - This project has taken much of the last year of my free time, as it involved learning about technical analysis, python, backtesting, etc.. There is a very good chance that I will be updating the code with the following improvements:
